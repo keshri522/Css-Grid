@@ -1,0 +1,54 @@
+.first {
+  height: 700px;
+  width: 600px;
+  position: relative;
+}
+img {
+  width: 100%;
+  height: 100%;
+  transition: all ease-in-out 0.6s;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.overlay {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: white;
+  opacity: 0;
+  line-height: 2;
+}
+.overlay p {
+  color: black;
+  font-family: cursive;
+  font-size: 18px;
+}
+.overlay h3 {
+  color: black;
+  font-family: cursive;
+}
+
+.first:hover .overlay {
+  opacity: 1;
+  color: white;
+}
+.first:hover img {
+  opacity: 0.7;
+}
+button {
+  background-color: crimson;
+  padding: 10px 30px;
+  font-size: 15px;
+  color: black;
+}
+button:hover {
+  transform: translate(5%);
+}
